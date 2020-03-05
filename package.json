@@ -1,0 +1,16 @@
+{
+  "name": "discord-util",
+  "version": "1.0.0",
+  "description": "Discord Utility Bot",
+  "scripts": {
+    "build": "npm i",
+    "dev": "nodemon index.js",
+    "serve": "node index.js"
+  },
+  "author": "Florian Pallas",
+  "dependencies": {
+    "discord.js": "^12.0.1",
+    "dotenv": "^8.2.0",
+    "request": "^2.88.2"
+  }
+}
