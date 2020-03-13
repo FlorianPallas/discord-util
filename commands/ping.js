@@ -12,7 +12,7 @@ module.exports.execute = async (args, context) => {
 
     // Send Pong
     const m = await context.message.channel.send('Checking...');
-    m.edit(`Pong! Latency is ${m.createdTimestamp - context.message.createdTimestamp}ms. API Latency is ${Math.round(context.client.ping)}ms!`);
+    m.edit(`Pong! Latency is ${m.createdTimestamp - context.message.createdTimestamp}ms.`);
   }
   catch (err)
   {

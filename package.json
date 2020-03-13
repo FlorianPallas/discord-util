@@ -9,7 +9,7 @@
   },
   "author": "Florian Pallas",
   "dependencies": {
-    "discord.js": "^12.0.1",
+    "discord.js": "^12.0.2",
     "dotenv": "^8.2.0",
     "request": "^2.88.2"
   }

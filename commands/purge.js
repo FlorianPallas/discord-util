@@ -3,8 +3,8 @@ const util = require('../util');
 const messageFailed = 'Could not delete messages! :cry:';
 
 module.exports.execute = async (args, context) => {
-  //try
-  //{
+  try
+  {
     // Check users permissions
     if (!context.message.member.hasPermission('MANAGE_MESSAGES', false, false)) {
       util.ErrorNoPermission(messageFailed, context.message);
@@ -38,11 +38,9 @@ module.exports.execute = async (args, context) => {
     }
     
     m.delete({ timeout: 5000 });
-  /*
   }
   catch (err)
   {
     util.Error(messageFailed, err, context.message);
   }
-  */
 };

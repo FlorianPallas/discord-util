@@ -12,9 +12,7 @@ module.exports.execute = async (args, context) => {
 
     // Gather info
     const sv = context.message.guild;
-    const uid = context.message.author.id;
-    const member = context.message.guild.members.get(uid);
-    const vc = member.voiceChannel;
+    const vc = context.message.member.voice.channel;
 
     // Check if user is in voice channel
     if (!vc) {
